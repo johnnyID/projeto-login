@@ -34,9 +34,10 @@ main > section#login{
     /* A propriedade [ overflow: hidden; ] serve para esconder o que transbordar de algum container, neste caso, a imagem da div acaba vazando do container [ section#login ] */
     overflow: hidden;
     background-color: white;
-    width: 250px;
+    width: 251px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.269);
     transition: width .3s ease, height .3s ease;
 }
 
@@ -50,4 +51,15 @@ main > section#login > div#imagem{
 main > section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+main > section#login > div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+main > section#login > div#formulario > p{
+    margin-bottom: 8px;
+    font-size: 0.8em;
 }

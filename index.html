@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Login</title>
@@ -18,8 +19,21 @@
                 <p>
                     Seja bem-vindo(a) à tela de login do site. Certifique-se de cadastrar-se para ter acesso a novas interações no ambiente.
                 </p>
-                <form action="login.js" method="post">
+                <form action="login.js" method="post" autocomplete="on">
+
+                    <div class="campo">
+                        <span class="material-icons">account_circle</span>
+                        <input type="email" name="email" id="email" required autocomplete="email" maxlength="30" placeholder="Seu e-mail">
+                        <label for="email">Email</label>
+                    </div>
                     
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="senha" id="senha" required autocomplete="current-password" minlength="8" maxlength="20" placeholder="Sua senha">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci minha senha</a>
                 </form>
             </div>
         </section>
