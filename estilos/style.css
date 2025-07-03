@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 
+* Paleta de Cores:
+* Verde:  #49a09d
+* Lilás: #5f2c82
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+main > section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* A propriedade [ overflow: hidden; ] serve para esconder o que transbordar de algum container, neste caso, a imagem da div acaba vazando do container [ section#login ] */
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    transition: width .3s ease, height .3s ease;
+}
+
+main > section#login > div#imagem{
+    display: block;
+    background: #5f2c82 url("../imagens/predio.jpg") no-repeat left bottom fixed;
+    background-size: cover;
+    height: 200px;
+}
+
+main > section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
