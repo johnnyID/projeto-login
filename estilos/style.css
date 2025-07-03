@@ -34,7 +34,7 @@ main > section#login{
     /* A propriedade [ overflow: hidden; ] serve para esconder o que transbordar de algum container, neste caso, a imagem da div acaba vazando do container [ section#login ] */
     overflow: hidden;
     background-color: white;
-    width: 251px;
+    width: 275px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.269);
