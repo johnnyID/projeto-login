@@ -29,8 +29,7 @@ main > section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
+    
     /* A propriedade [ overflow: hidden; ] serve para esconder o que transbordar de algum container, neste caso, a imagem da div acaba vazando do container [ section#login ] */
     overflow: hidden;
     background-color: white;
@@ -38,6 +37,7 @@ main > section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.269);
+    transform: translate(-50%, -50%);
     transition: width .3s ease, height .3s ease;
 }
 
@@ -73,7 +73,6 @@ main > section#login > div#formulario > form > div.campo > input{
     font-size: .9em;
     width: calc(100% - 44.365px);
     height: 100%;
-    transform: translateY(-10px);
     padding: 4px;
     border-top-left-radius: 5px;
     border-top-right-radius: 8px;
@@ -81,6 +80,7 @@ main > section#login > div#formulario > form > div.campo > input{
     border-bottom-left-radius: 5px;
     border: 0px;
     background-color: #5fcac7;
+    transform: translateY(-10px);
 }
 
 main > section#login > div#formulario > form > div.campo > input:focus{
