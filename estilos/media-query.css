@@ -1,60 +1,101 @@
+/* 
+! -> Estilo relativo à tela
+! -> Media Query
+*/
+
 @charset "UTF-8";
 
-@media screen and (min-width: 690px) and (max-width: 992px){
+/* ? Estilo para tablets */
+@media screen and (min-width: 690px) {
+
+    /* ? Estilizando o plano de fundo */
     body{
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background: linear-gradient(to top, rgb(91, 207, 188), rgb(170, 0, 204)) fixed;
     }
-    
-    main > section#login{
+
+    /* ? Configuração do layout */
+    main > section.login{
+        display: flex;
+        flex-flow: row nowrap;
+
         width: 80vw;
-        height: 290px;
+        height: 300px;
     }
 
-    main > section#login > div#imagem{
-        /* A propriedade [float: left; ou float: right; ] serve para alinhar elementos à esquerda ou à direita de um container, como por exemplo, um formulário junto à uma imagem para deixar o design ddo formulário atrativo ao usuário. */
-        float: left;
+    /* ? Estilizando a largura e o tamanho da imagem */
+    main > section.login > div.image{
+        height: 100%;
         width: 30%;
-        height: 500px;
-    }
-    
-    main > section#login > div#formulario{
-        float: right;
-        width: 70%;
     }
 
-    main > section#login > div#formulario > p{
-        margin: 10px 0px;
-        font-size: .85em;
-        text-align: justify;
+    /* ? Estilizando o parágrafo */
+    main > section.login > div.form > p{
+        font-size: .9em;
+    }
+
+    /* ? Estilizando a caixa de entrada de dados */
+    main > section.login > div.form > form > input[type=submit]{
+        height: 42px;
+        margin: 4px 0px;
+    }
+
+    /* ? Estilizando o botão[link] */
+    main > section.login > div.form > form > a{
+        height: 40px;
+        padding-bottom: 4px;
     }
 }
 
-@media screen and (min-width: 992px){
+
+
+/* ? EStilo para desktop+ */
+@media screen and (min-width: 992px) {
+
     body{
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background: linear-gradient(to top, rgb(91, 207, 188), rgb(170, 0, 204)) fixed;
     }
-    
-    main > section#login{
-        width: 65vw;
+
+    /* ? Configuração do layout */
+    main > section.login{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        
+        width: 85vw;
+        max-width: 992px;
         height: 350px;
     }
 
-    main > section#login > div#imagem{
-        float: right;
+    /* ? Estilizando a imagem */
+    main > section.login > div.image{
         width: 50%;
-        height: 500px;
+        height: 100%;
+
+        background-position: center center;
     }
 
-    main > section#login > div#formulario{
+    /* ? Estilizando a largura do conteúdo interativo */
+    main > section.login > div.form{
         width: 50%;
     }
 
-    main > section#login > div#formulario > h1{
-        font-size: 2em;
+    /* ? Estilizando o título */
+    main > section.login > div.form > h1{
+        font-size: 1.9em;
     }
 
-    main > section#login > div#formulario > p{
-        margin: 8px 0px 25px 0px;
-        font-size: 1em;
+    /* ? Estilizando o parágrafo */
+    main > section.login > div.form > p{
+        font-size: 0.97em;
+    }
+
+    /* ? Estilizando a largura e o tamanho da caixa de entrada de dados */
+    main > section.login > div.form > form > input[type=submit]{
+        height: 42px;
+        margin: 4px 0px;
+    }
+
+    /* ? Estilizando o botão[link] */
+    main > section.login > div.form > form > a{
+        height: 40px;
     }
 }
